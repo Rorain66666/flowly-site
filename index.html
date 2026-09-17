@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Flowly 精选 AI 与效率工具，把一个想法变成清晰的下一步。"
+    />
+    <meta name="theme-color" content="#0d1421" />
+    <meta property="og:title" content="Flowly · 把每个灵感，变成下一步" />
+    <meta
+      property="og:description"
+      content="按场景找到真正好用的 AI 与效率工具，少收藏，多完成。"
+    />
+    <title>Flowly · 把每个灵感，变成下一步</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Flowly 首页">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          <span>flowly</span>
+        </a>
+
+        <nav class="main-nav" aria-label="主导航">
+          <a href="#discover">发现工具</a>
+          <a href="#workflows">工作流</a>
+          <a href="#about">我们的方法</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <button class="icon-button" id="themeToggle" type="button" aria-label="切换主题">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.64 5.64l1.56 1.56M16.8 16.8l1.56 1.56M5.64 18.36l1.56-1.56M16.8 7.2l1.56-1.56" />
+              <circle cx="12" cy="12" r="4.2" />
+            </svg>
+          </button>
+          <a class="button button-dark button-small" href="#newsletter">加入清单</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero section-wrap" id="about">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span>2026 · 一站式效率导航</div>
+            <h1>把每个灵感，<br /><em>变成下一步。</em></h1>
+            <p class="hero-lede">
+              精选真正好用的 AI 与效率工具，按你的场景整理好。少一点收藏夹，多一点完成感。
+            </p>
+
+            <div class="search-wrap">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="10.8" cy="10.8" r="6.8" />
+                <path d="m16 16 4.2 4.2" />
+              </svg>
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="搜工具、场景或关键词…"
+                autocomplete="off"
+                aria-label="搜索工具"
+              />
+              <kbd>⌘ K</kbd>
+            </div>
+
+            <div class="quick-searches" aria-label="热门搜索">
+              <span>大家都在搜</span>
+              <button type="button" data-quick-search="写作">写作</button>
+              <button type="button" data-quick-search="设计">设计</button>
+              <button type="button" data-quick-search="会议">会议</button>
+              <button type="button" data-quick-search="学习">学习</button>
+            </div>
+          </div>
+
+          <div class="hero-feature" aria-label="本周精选工作流">
+            <div class="feature-topline">
+              <span class="feature-label">本周精选</span>
+              <span class="feature-date">W37 / 2026</span>
+            </div>
+            <div class="feature-icon">✦</div>
+            <h2>用 10 分钟，<br />搭好你的工作流</h2>
+            <p>从一段模糊想法到一页可以分享的方案，只需要三步。</p>
+            <div class="feature-steps">
+              <div class="feature-step is-done"><span>01</span><b>捕捉想法</b><i>✓</i></div>
+              <div class="feature-step is-done"><span>02</span><b>整理脉络</b><i>✓</i></div>
+              <div class="feature-step"><span>03</span><b>生成方案</b><i>→</i></div>
+            </div>
+            <a class="feature-link" href="#workflows">查看完整工作流 <span>↗</span></a>
+          </div>
+        </section>
+
+        <section class="stats section-wrap" aria-label="Flowly 数据">
+          <div class="stat"><strong>128<span>+</span></strong><small>精选工具</small></div>
+          <div class="stat"><strong>24</strong><small>真实场景</small></div>
+          <div class="stat"><strong>6</strong><small>可复制工作流</small></div>
+          <div class="stat stat-note"><span class="status-dot"></span><small>每周三持续更新</small></div>
+        </section>
+
+        <section class="section-wrap scene-section" id="discover">
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker">01 / 先选场景</span>
+              <h2>你现在想完成什么？</h2>
+            </div>
+            <p>不用研究复杂参数，先从正在发生的事情开始。</p>
+          </div>
+
+          <div class="scene-grid">
+            <button class="scene-card scene-lime" type="button" data-scene="写作">
+              <span class="scene-number">01</span><span class="scene-symbol">Aa</span>
+              <strong>写作表达</strong><small>让文字更清楚有力</small><span class="scene-arrow">↗</span>
+            </button>
+            <button class="scene-card scene-coral" type="button" data-scene="设计">
+              <span class="scene-number">02</span><span class="scene-symbol">◒</span>
+              <strong>视觉设计</strong><small>从灵感到可用画面</small><span class="scene-arrow">↗</span>
+            </button>
+            <button class="scene-card scene-blue" type="button" data-scene="学习">
+              <span class="scene-number">03</span><span class="scene-symbol">∿</span>
+              <strong>学习研究</strong><small>快速理解复杂信息</small><span class="scene-arrow">↗</span>
+            </button>
+            <button class="scene-card scene-yellow" type="button" data-scene="会议">
+              <span class="scene-number">04</span><span class="scene-symbol">◫</span>
+              <strong>会议协作</strong><small>把讨论变成行动项</small><span class="scene-arrow">↗</span>
+            </button>
+            <button class="scene-card scene-purple" type="button" data-scene="自动化">
+              <span class="scene-number">05</span><span class="scene-symbol">⌁</span>
+              <strong>流程自动化</strong><small>把重复工作交给工具</small><span class="scene-arrow">↗</span>
+            </button>
+            <button class="scene-card scene-mint" type="button" data-scene="个人">
+              <span class="scene-number">06</span><span class="scene-symbol">✳</span>
+              <strong>个人成长</strong><small>建立可持续的节奏</small><span class="scene-arrow">↗</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="section-wrap tool-section">
+          <div class="section-heading tool-heading">
+            <div>
+              <span class="section-kicker">02 / 再挑工具</span>
+              <h2>今天值得试试的</h2>
+            </div>
+            <div class="tool-controls">
+              <div class="filter-tabs" role="tablist" aria-label="工具分类">
+                <button class="filter-tab is-active" type="button" data-filter="全部" role="tab" aria-selected="true">全部</button>
+                <button class="filter-tab" type="button" data-filter="写作" role="tab" aria-selected="false">写作</button>
+                <button class="filter-tab" type="button" data-filter="设计" role="tab" aria-selected="false">设计</button>
+                <button class="filter-tab" type="button" data-filter="生产力" role="tab" aria-selected="false">生产力</button>
+              </div>
+              <button class="favorites-filter" id="favoritesFilter" type="button"><span>♡</span> 我的收藏 <b id="favoritesCount">0</b></button>
+            </div>
+          </div>
+
+          <div class="tool-grid" id="toolGrid" aria-live="polite"></div>
+          <div class="empty-state" id="emptyState" hidden>
+            <span>⌕</span>
+            <h3>还没有找到匹配工具</h3>
+            <p>换个关键词，或试试“写作”“设计”“会议”。</p>
+          </div>
+          <div class="section-more"><button class="button button-outline" id="clearFilters" type="button">清除筛选 <span>↗</span></button></div>
+        </section>
+
+        <section class="workflow-section" id="workflows">
+          <div class="section-wrap">
+            <div class="section-heading workflow-heading">
+              <div>
+                <span class="section-kicker">03 / 最后，照着做</span>
+                <h2>把工具串成结果</h2>
+              </div>
+              <p>单个工具解决一个动作，工作流解决一件事。</p>
+            </div>
+            <div class="workflow-grid">
+              <article class="workflow-card">
+                <div class="workflow-meta"><span class="workflow-tag">内容创作</span><span>约 20 min</span></div>
+                <h3>从零开始写一篇<br />让人读下去的文章</h3>
+                <div class="workflow-chain"><span class="chain-icon chain-blue">✦</span><i>→</i><span class="chain-icon chain-orange">Aa</span><i>→</i><span class="chain-icon chain-dark">◈</span></div>
+                <a href="#discover">打开工作流 <span>↗</span></a>
+              </article>
+              <article class="workflow-card">
+                <div class="workflow-meta"><span class="workflow-tag">会议协作</span><span>约 8 min</span></div>
+                <h3>把一小时会议<br />变成一页行动清单</h3>
+                <div class="workflow-chain"><span class="chain-icon chain-yellow">◫</span><i>→</i><span class="chain-icon chain-purple">◒</span><i>→</i><span class="chain-icon chain-dark">✓</span></div>
+                <a href="#discover">打开工作流 <span>↗</span></a>
+              </article>
+              <article class="workflow-card">
+                <div class="workflow-meta"><span class="workflow-tag">灵感视觉化</span><span>约 15 min</span></div>
+                <h3>把脑海里的画面<br />变成可以分享的提案</h3>
+                <div class="workflow-chain"><span class="chain-icon chain-pink">✳</span><i>→</i><span class="chain-icon chain-green">⌁</span><i>→</i><span class="chain-icon chain-dark">↗</span></div>
+                <a href="#discover">打开工作流 <span>↗</span></a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="newsletter section-wrap" id="newsletter">
+          <div class="newsletter-mark" aria-hidden="true">✦</div>
+          <div>
+            <span class="section-kicker">每周一封，不打扰</span>
+            <h2>把下一个好工具<br /><em>寄给你。</em></h2>
+          </div>
+          <form id="newsletterForm" class="newsletter-form">
+            <label class="sr-only" for="emailInput">邮箱地址</label>
+            <input id="emailInput" type="email" placeholder="你的邮箱地址" required />
+            <button class="button button-dark" type="submit">订阅精选 <span>↗</span></button>
+            <small>我们只发送真正值得打开的内容。</small>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer section-wrap">
+        <div class="footer-brand"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>flowly</span></div>
+        <p>把每个灵感，变成下一步。</p>
+        <div class="footer-links"><a href="#about">关于 Flowly</a><a href="mailto:hello@flowly.tools">联系 / 投稿</a><a href="#newsletter">订阅更新</a></div>
+        <small>© 2026 Flowly. Made for better days.</small>
+      </footer>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
