@@ -59,6 +59,16 @@ const tools = [
     logoClass: "logo-green",
     url: "https://gamma.app/",
   },
+  {
+    id: "agent-qa",
+    name: "agent-qa",
+    description: "vostride 的自然语言应用测试智能体，覆盖网页、Android 和 iOS，具备持久记忆与经过验证的自我改进能力。",
+    categories: ["自动化", "生产力"],
+    tags: ["应用测试", "CLI", "MCP"],
+    logo: "🧪",
+    logoClass: "logo-blue",
+    url: "https://vostride.com",
+  },
 ];
 
 const toolGrid = document.querySelector("#toolGrid");
